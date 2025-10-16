@@ -1,0 +1,15 @@
+{
+    "godotTools.editorPath.godot4": "d:\\programas\\Godot_v4.5-stable_win64.exe\\Godot_v4.5-stable_win64.exe",
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "editor.defaultFormatter": "geequlim.godot-tools",
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/*.uid": true
+    }
+}
