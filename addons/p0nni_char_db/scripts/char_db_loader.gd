@@ -1,9 +1,8 @@
 class_name CharDBLoader
 
-const CHARACTER_DB_PATH = "res://database/CharacterDB.tres"
-
 func load_db_enum() -> String:
-    var db: CharacterDB = load(CHARACTER_DB_PATH)
+	const CHARACTER_DB_PATH = "res://database/CharacterDB.tres"
+	var db: CharacterDB = preload(CHARACTER_DB_PATH)
 	var ids_list = []
 	if is_instance_valid(db):
 		ids_list = db.get_ids()
@@ -13,4 +12,5 @@ func load_db_enum() -> String:
 	# Formato: "ID_CODE_1,ID_CODE_2,ID_CODE_3"
 	# Como queremos que sejam strings, o formato é simples:
 	var hint_string = ",".join(ids_list)
-    return hint_string
+
+	return "" if ids_list.is_empty() else hint_string
